@@ -1,27 +1,17 @@
-This example demonstrates how to use [Express](http://expressjs.com/) 4.x and
-[Passport](http://passportjs.org/) to authenticate users using Facebook.  Use
-this example as a starting point for your own web applications.
+expressとpassportモジュールでGoogleアカウントログイン機能
 
-## Instructions
+# 起動方法
 
-To install this example on your computer, clone the repository and install
-dependencies.
+[Google API Consoleから「Client ID」と「Secret Key」を取得する](http://ablogcms.io/hands-on/snsLogin.html)
 
-```bash
-$ git clone git@github.com:passport/express-4.x-facebook-example.git
-$ cd express-4.x-facebook-example
-$ npm install
-```
-
-The example uses environment variables to configure the consumer key and
-consumer secret needed to access Facebook's API.  Start the server with those
-variables set to the appropriate credentials.
+承認済みのリダイレクトURLを `http://localhost:8000/return` とする
+承認済みのJavaScript生成元は空欄で大丈夫
 
 ```bash
-$ CLIENT_ID=__FACEBOOK_CLIENT_ID__ CLIENT_SECRET=__FACEBOOK_CLIENT_SECRET__ node server.js
+$ CLIENT_ID=__Google_CLIENT_ID__ CLIENT_SECRET=__Google_CLIENT_SECRET__ node server.js
 ```
 
-Open a web browser and navigate to [http://localhost:3000/](http://localhost:3000/)
-to see the example in action.
+ブラウザでに [http://localhost:8000/](http://localhost:8000/) にアクセスする
+
 
 
